@@ -1,0 +1,156 @@
+/* ===== IMPORTS ===== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ===== RESET START ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* ===== RESET END ===== */
+
+/* CSS START */
+
+nav {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 8vh;
+  background: #02202a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav img {
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+
+nav ul {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 20px;
+  position: absolute;
+  inset: 0;
+  background: #02202a;
+  display: none;
+}
+
+.burger-btn {
+  color: white;
+  font-size: 2rem;
+}
+
+/* Header Slideshow */
+
+header {
+  margin-top: 8vh;
+  position: relative;
+  width: 100vw;
+  height: 91.5vh;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 100vw;
+  height: 92vh;
+  position: relative;
+}
+
+.header-container img {
+  position: absolute;
+  width: 40%;
+  bottom: 15vh;
+}
+
+.header-container img:nth-child(1) {
+  left: 5%;
+}
+
+.header-container img:nth-child(2) {
+  right: 5%;
+}
+
+.slides {
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Main */
+
+main {
+  width: 100vw;
+  background: #02202a;
+  padding-bottom: 5vh;
+}
+
+.main-heading {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  color: #0e6884;
+  font-size: 1.6rem;
+}
+
+.cards {
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  color: #0e6884;
+  font-size: 3rem;
+  height: 400px;
+  box-shadow: 3px 3px 10px black;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.card p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card a {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  background: #0e6884;
+  padding: 10px;
+  border-radius: 999px;
+  width: 40vw;
+  text-align: center;
+}
+
+.card a:hover {
+  box-shadow: 6px 6px 10px black;
+  transform: translateY(-3px);
+}
