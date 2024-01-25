@@ -154,3 +154,143 @@ main {
   box-shadow: 6px 6px 10px black;
   transform: translateY(-3px);
 }
+
+/* Form */
+
+.form-sec {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-sec img {
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.form-sec * {
+  width: 100%;
+}
+
+.form-sec h2 {
+  text-align: center;
+  color: #0e6884;
+  margin-top: 10vh;
+}
+
+.form-sec input {
+  display: block;
+  height: 40px;
+  border-radius: 100000px;
+  background: transparent;
+  border: 1px solid white;
+  width: 80vw;
+  margin: 0 auto;
+  outline: 2px solid #0e6884;
+  border: none;
+}
+
+.form-sec input::placeholder {
+  color: white;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.form-sec input:focus {
+  outline: 2px solid rgb(7, 131, 119);
+}
+
+.form-sec select {
+  display: block;
+  height: 30px;
+}
+
+.form-wrapper {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.form-wrapper form {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+textarea {
+  background: transparent;
+  max-width: 80vw;
+  margin-left: 10vw;
+  border-radius: 30px;
+  height: 200px;
+  padding: 15px;
+  color: white;
+  outline: 2px solid #0e6884;
+  border: none;
+}
+
+textarea:focus {
+  outline: 2px solid rgb(7, 131, 119);
+}
+
+input[type="submit"] {
+  margin-top: 1vh;
+  width: 80vw;
+  height: 40px;
+  background: var(--purple);
+  color: white;
+  background: #0e6884;
+  border: none;
+  cursor: pointer;
+}
+
+.success {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font-size: 1.2rem;
+  color: white;
+  z-index: -1;
+}
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  background: #02202a;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.footer-contact {
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer img {
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer-social i {
+  color: white;
+  font-size: 3rem;
+  margin-right: 20px;
+}
