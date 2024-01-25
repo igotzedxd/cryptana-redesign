@@ -12,20 +12,22 @@
     <script src="app/burger.js" defer></script>
 </head>
 
-<body>
+<body id="top">
 
     <nav>
-        <a class="logo">
-            <img src="img/logo-color.png" alt="">
+        <div class="nav-container">
+            <a class="logo" href="#top">
+                <img src="img/logo-color.png" alt="">
 
-            </ac>
+            </a>
             <ul class="nav-list">
-                <li class="list-item list-item1">1</li>
-                <li class="list-item list-item2">2</li>
-                <li class="list-item list-item3">3</li>
-                <li class="list-item list-item4">4</li>
+                <li class="list-item list-item1">HJEM</li>
+                <li class="list-item list-item2">DIN WALLET</li>
+                <li class="list-item list-item3">FAQ</li>
+                <li class="list-item list-item4">KONTAKT</li>
             </ul>
             <a class="burger" href="#"><i class="fa-solid fa-bars burger-btn"></i></a>
+        </div>
     </nav>
 
 
@@ -80,8 +82,8 @@
                 <label>
                     <input type="email" id="email" name="email" placeholder="Email" required>
                 </label>
-                <label>
-                    <textarea name="textarea" rows="5" cols="40" placeholder="">Spørgsmål</textarea>
+                <label class="textarea-label">
+                    <textarea class="textarea" name="textarea" rows="5" cols="40" placeholder="">Spørgsmål</textarea>
                 </label>
                 <input type="submit" value="Send">
             </form>

@@ -35,13 +35,19 @@ nav {
   width: 100vw;
   height: 8vh;
   background: #02202a;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
 }
 
-nav img {
+.nav-container {
+  margin: 0 auto;
+  margin-top: -1vh;
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container img {
   height: 40px;
   object-fit: cover;
   object-position: center;
@@ -64,7 +70,7 @@ nav img {
 }
 
 .burger-btn {
-  color: white;
+  color: #0e6884;
   font-size: 2rem;
   cursor: pointer;
   right: 10px;
@@ -87,23 +93,23 @@ header {
 
 .header-container {
   margin: 0 auto;
-  width: 100vw;
+  max-width: 1366px;
   height: 92vh;
   position: relative;
 }
 
 .header-container img {
   position: absolute;
-  width: 40%;
+  width: 140px;
   bottom: 15vh;
 }
 
 .header-container img:nth-child(1) {
-  left: 5%;
+  right: 200px;
 }
 
 .header-container img:nth-child(2) {
-  right: 5%;
+  right: 40px;
 }
 
 .slides {
@@ -305,4 +311,70 @@ footer img {
   color: white;
   font-size: 3rem;
   margin-right: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .cards {
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  .card a {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .card {
+    flex-basis: 23%;
+  }
+
+  .card a {
+    width: 80%;
+  }
+
+  .form-sec input {
+    width: 30vw;
+  }
+
+  .textarea-label {
+    height: 200px;
+  }
+
+  .form-sec label {
+    position: relative;
+    width: 100vw;
+  }
+  .textarea {
+    position: absolute;
+    width: 30vw;
+    left: 25vw;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer *:nth-child(1) {
+    order: 2;
+  }
+  footer *:nth-child(2) {
+    order: 1;
+  }
+  footer *:nth-child(3) {
+    order: 2;
+  }
 }
