@@ -93,6 +93,7 @@ header {
 
 .header-container {
   margin: 0 auto;
+  padding: 50px;
   max-width: 1366px;
   height: 92vh;
   position: relative;
@@ -105,11 +106,21 @@ header {
 }
 
 .header-container img:nth-child(1) {
-  right: 200px;
 }
 
 .header-container img:nth-child(2) {
-  right: 40px;
+  right: 20px;
+}
+
+.header-container h2 {
+  max-width: 90vw;
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  right: 200px;
+  color: #0e6884;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .slides {
@@ -133,9 +144,6 @@ main {
   padding-top: 50px;
   color: #0e6884;
   font-size: 1.6rem;
-}
-
-.cards {
 }
 
 .card {
@@ -175,22 +183,17 @@ main {
 
 /* Form */
 
+#form {
+}
+
 .form-sec {
   position: relative;
   width: 100vw;
   margin: 0 auto;
-  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-}
-
-.form-sec img {
-  height: 100%;
-  width: 100vw;
-  object-fit: cover;
-  object-position: center;
 }
 
 .form-sec * {
@@ -233,11 +236,23 @@ main {
 .form-wrapper {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  z-index: 1;
+  width: 100vw;
 }
 
+.form-sec-img {
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mobile {
+}
+.desktop {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
 .form-wrapper form {
   margin-top: 10vh;
   display: flex;
@@ -376,5 +391,16 @@ footer img {
   }
   footer *:nth-child(3) {
     order: 2;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+
+  .header-container h2 {
+    font-size: 2.8rem;
   }
 }
